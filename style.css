@@ -1,6 +1,10 @@
 .page-content {
   padding: 24px;
 }
+.multiple-selector {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* body {
   background-color: #80d4ea;
