@@ -1,4 +1,8 @@
-body {
+.page-content {
+  padding: 24px;
+}
+
+/* body {
   background-color: #80d4ea;
 }
 #clock {
@@ -12,4 +16,4 @@ body {
   text-align: center;
   color: white;
   font-size: 100px;
-}
+} */
