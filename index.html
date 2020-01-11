@@ -10,7 +10,7 @@
 
   <body>
     <div class="page-content">
-      <form>
+      <form onsubmit="formSubmission(event)">
         <label for="firstName">First Name</label>
         <input type="text" name="firstName" required placeholder="Theo" />
         <label for="lastName">Last Name</label>
@@ -27,53 +27,38 @@
         <div class="multiple-selectors">
           <label for="dogName1">Dog's Name</label>
           <input type="text" name="dogName1" required placeholder="Fido" />
-          <label for="xsmall1">Under 10 lbs</label>
-          <input type="radio" name="xsmall1" />
-          <label for="small1">10-20 lbs</label>
-          <input type="radio" name="small1" />
-          <label for="medium1">21-60 lbs</label>
-          <input type="radio" name="medium1" />
-          <label for="large1">61-90lbs</label>
-          <input type="radio" name="large1" />
-          <label for="xlarge1">Over 90 lbs</label>
-          <input type="radio" name="xlarge1" />
+          <input type="radio" value="xsmall1" name="dog1Size" /> Under 10 lbs
+          <input type="radio" value="small1" name="dog1Size" /> 10-20 lbs
+          <input type="radio" value="medium1" name="dog1Size" /> 21-60lbs
+          <input type="radio" value="large1" name="dog1Size" /> 61-90lbs
+          <input type="radio" value="xlarge1" name="dog1Size" /> Over 90 lbs
         </div>
         <div>
           <label for="dogName2">Second Dog's Name</label>
           <input type="text" name="dogName2" placeholder="Spot" />
-          <label for="xsmall2">Under 10 lbs</label>
-          <input type="radio" name="xsmall2" />
-          <label for="small2">10-20 lbs</label>
-          <input type="radio" name="small2" />
-          <label for="medium2">21-60 lbs</label>
-          <input type="radio" name="medium2" />
-          <label for="large2">61-90lbs</label>
-          <input type="radio" name="large2" />
-          <label for="xlarge2">Over 90 lbs</label>
-          <input type="radio" name="xlarge2" />
+          <input type="radio" value="xsmall1" name="dog2Size" /> Under 10 lbs
+          <input type="radio" value="small1" name="dog2Size" /> 10-20 lbs
+          <input type="radio" value="medium1" name="dog2Size" /> 21-60lbs
+          <input type="radio" value="large1" name="dog2Size" /> 61-90lbs
+          <input type="radio" value="xlarge1" name="dog2Size" /> Over 90 lbs
         </div>
         <div>
           <label for="dogName3">Third Dog's Name</label>
           <input type="text" name="dogName3" placeholder="Scout" />
-          <label for="xsmall3">Under 10 lbs</label>
-          <input type="radio" name="xsmall3" />
-          <label for="small3">10-20 lbs</label>
-          <input type="radio" name="small3" />
-          <label for="medium3">21-60 lbs</label>
-          <input type="radio" name="medium3" />
-          <label for="large3">61-90lbs</label>
-          <input type="radio" name="large3" />
-          <label for="xlarge3">Over 90 lbs</label>
-          <input type="radio" name="xlarge3" />
+          <input type="radio" value="xsmall1" name="dog3Size" /> Under 10 lbs
+          <input type="radio" value="small1" name="dog3Size" /> 10-20 lbs
+          <input type="radio" value="medium1" name="dog3Size" /> 21-60lbs
+          <input type="radio" value="large1" name="dog3Size" /> 61-90lbs
+          <input type="radio" value="xlarge1" name="dog3Size" /> Over 90 lbs
         </div>
 
         <label>Which dog parks would you like meet at? </label>
-        <input type="checkbox" name="AnnMor" />
-        <label for="AnnMor">Ann Morrison</label>
-        <input type="checkbox" name="Military" />
-        <label for="Military">Fort Boise Military Reserve</label>
-        <input type="checkbox" name="MorrisHill" />
-        <label for="MorrisHill">Morris Hill Park</label>
+        <input type="checkbox" name="annMor" />
+        <label for="annMor">Ann Morrison</label>
+        <input type="checkbox" name="military" />
+        <label for="military">Fort Boise Military Reserve</label>
+        <input type="checkbox" name="morrisHill" />
+        <label for="morrisHill">Morris Hill Park</label>
         <div>
           <button type="submit">Submit</button>
         </div>

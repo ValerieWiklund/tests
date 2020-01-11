@@ -1,3 +1,23 @@
+function formSubmission(e) {
+  e.preventDefault();
+  let form = e.target;
+  let formData = {
+    firstName: form.firstName.value,
+    lastName: form.lastName.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    dogName1: form.dogName1.value,
+    dog1Size: form.dog1Size.checked,
+    dogName2: form.dogName2.value,
+    dog2Size: form.dog2Size.checked,
+    dogName3: form.dogName3.value,
+    dog3Size: form.dog3Size.checked,
+    annMor: form.annMor.checked,
+    military: form.military.checked,
+    morrisHill: form.morrisHill.checked
+  };
+}
+
 // function displayTime() {
 //   let currentTime = new Date();
 //   let hours = currentTime.getHours();
