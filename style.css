@@ -5,8 +5,18 @@
   background-color: coral;
 }
 .multiple-selector {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+}
+label {
+  float: left;
+  width: 200px;
+  padding-right: 24px;
+}
+
+input {
+  float: left;
+  width: calc(100% - 200px);
 }
 
 /* body {
