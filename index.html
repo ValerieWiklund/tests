@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Doggy Play Dates</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -12,31 +18,37 @@
     <h1>Doggy Play Dates</h1>
     <div class="page-content">
       <form onsubmit="formSubmission(event)">
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" required placeholder="Theo" />
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" required placeholder="Jackson" />
-        <label for="email">Email Address</label>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="example@example.com"
-        />
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" placeholder="000-000-0000" />
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" required placeholder="Theo" />
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" required placeholder="Jackson" />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="example@example.com"
+          />
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" placeholder="000-000-0000" />
+        </div>
         <div class="multiple-selectors">
           <label for="dogName1">Dog's Name</label>
           <input type="text" name="dogName1" required placeholder="Fido" />
-          <input type="radio" value="xsmall1" name="dog1Size" /> Under 10 lbs
-          <input type="radio" value="small1" name="dog1Size" /> 10-20 lbs
-          <input type="radio" value="medium1" name="dog1Size" /> 21-60lbs
-          <input type="radio" value="large1" name="dog1Size" /> 61-90lbs
-          <input type="radio" value="xlarge1" name="dog1Size" /> Over 90 lbs
-        </div>
-        <div>
+          <div>
+            <input type="radio" value="xsmall1" name="dog1Size" /> Under 10 lbs
+            <input type="radio" value="small1" name="dog1Size" /> 10-20 lbs
+            <input type="radio" value="medium1" name="dog1Size" /> 21-60lbs
+            <input type="radio" value="large1" name="dog1Size" /> 61-90lbs
+            <input type="radio" value="xlarge1" name="dog1Size" /> Over 90 lbs
+          </div>
+
           <label for="dogName2">Second Dog's Name</label>
           <input type="text" name="dogName2" placeholder="Spot" />
+          <div></div>
           <input type="radio" value="xsmall1" name="dog2Size" /> Under 10 lbs
           <input type="radio" value="small1" name="dog2Size" /> 10-20 lbs
           <input type="radio" value="medium1" name="dog2Size" /> 21-60lbs
@@ -53,7 +65,7 @@
           <input type="radio" value="xlarge1" name="dog3Size" /> Over 90 lbs
         </div>
 
-        <label>Which dog parks would you like meet at? </label>
+        <label>Which dog parks would you like to meet at? </label>
         <input type="checkbox" name="annMor" />
         <label for="annMor">Ann Morrison</label>
         <input type="checkbox" name="military" />
